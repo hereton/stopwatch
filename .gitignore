@@ -1,0 +1,10 @@
+##### ignore java compiler output
+bin/
+*.class
+
+##### ignore eclipse project files
+.project
+.settings
+
+
+
