@@ -6,7 +6,7 @@ package stopwatch;
  * @author totsapon menkul
  *
  */
-public class main {
+public class Main {
 	public static void main(String[] args) {
 		TaskTimer timer = new TaskTimer();
 
