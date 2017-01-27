@@ -1,14 +1,17 @@
 # Stopwatch tasks by Totsapon menkul (5910545698) (*)
 I ran the tasks on a ASUS , and got
 these results:
-Task | Time
---------------------------------------|-------:
-Append 50,000 chars to String | 2.078236 sec
-Append 100,000 chars to String | 7.181962 sec
-Append 100,000 chars to StringBuilder | 0.009466 sec
-Sum 1,000,000,000 double values from an array | 3.016828 sec
-Sum 1,000,000,000 Double objects from an array | 13.500505 sec
-Sum 1,000,000,000 BigDecimal objects | 22.505741 sec
+
+ Task | Time 
+ --------------------------------------|-------:
+ Append 50,000 chars to String | 2.078236 sec
+ Append 100,000 chars to String | 7.181962 sec
+ Append 100,000 chars to StringBuilder | 0.009466 sec
+ Sum 1,000,000,000 double values from an array | 3.016828 sec
+ Sum 1,000,000,000 Double objects from an array | 13.500505 sec
+ Sum 1,000,000,000 BigDecimal objects | 22.505741 sec
+ 
+ 
 ## Explanation of Results
 
 Why does appending 100,000 chars to a String take more than 2X the time to append 50,000 chars?
