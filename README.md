@@ -16,11 +16,8 @@ Why does appending 100,000 chars to a String take more than 2X the time to appen
 - Because there are memory that contain data before appending another 100,000 chars, the data in memory will get bigger and bigger to append. So it will take longer time than small data.
 
 Why is appending to StringBuilder so much different than appending to String? What is happening to the String?
-- Because when adding a char in StringBuilder. It was created an array that can contain all of input data already by multiply an array. This process will take a very shot time. 
-
-
-when StringBuilder added string. It will wait until length of StringBuilder is meet initial maximum of StringBuilder array.
-When string is meet initial maximum, StringBuilder will double or triple length of its array. So this is make the string get into memory faster and shorter time.
+- Because when StringBuilder adding a char. It will wait until length of char is meet initial maximum of StringBuilder array.
+When a char length is more than initial maximum array, StringBuilder will double length of its array when a char length is reach to the maximum array again StringBuilder will double length of its array again. So StringBuilder does not need to create a new array one by one. This process will get much faster than appending to String.
 
 Explain difference in time to sum double, Double, and BigDecimal. Which is faster and why?
 - The double which is a primitive is the fastest time. Because the number just add in its array. 
