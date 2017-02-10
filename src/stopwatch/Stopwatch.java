@@ -1,14 +1,13 @@
 package stopwatch;
 
-// I am not sure to remove this or not 
-import javax.print.attribute.standard.MediaSize.NA;
+
 
 /**
  * 
  * make a stop watch class that measure elapsed time between a starting time and
  * stopping time or until present time.
  * 
- * @author totsapon menkul
+ * @author Totsapon menkul
  * 
  */
 public class Stopwatch {

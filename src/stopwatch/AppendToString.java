@@ -3,7 +3,7 @@ package stopwatch;
 /**
  * append a char to string.
  * 
- * @author totsapon menkul
+ * @author Totsapon menkul
  *
  */
 public class AppendToString implements Runnable {
@@ -31,7 +31,6 @@ public class AppendToString implements Runnable {
 		while (k++ < count) {
 			result = result + CHAR;
 		}
-		System.out.println("final string length = " + result.length());
 	}
 
 	/**

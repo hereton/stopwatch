@@ -3,7 +3,7 @@ package stopwatch;
 /**
  * append a char into a StringBuilder.
  * 
- * @author totsapon menkul
+ * @author Totsapon menkul
  *
  */
 public class AppendToStringBuilder implements Runnable {
@@ -33,8 +33,6 @@ public class AppendToStringBuilder implements Runnable {
 		}
 		// now create a String from the result, to be compatible with task 1.
 		String result = builder.toString();
-		System.out.println("final string length = " + result.length());
-
 	}
 
 	/**

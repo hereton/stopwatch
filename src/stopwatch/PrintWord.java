@@ -1,7 +1,7 @@
 package stopwatch;
 /**
  * this class is my test class with The best teacher in SKE. Teacher JIM fatalaijon.
- * @author totsapon menkul
+ * @author Totsapon menkul
  *
  */
 public class PrintWord implements Runnable {

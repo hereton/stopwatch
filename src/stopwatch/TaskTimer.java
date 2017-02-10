@@ -4,7 +4,7 @@ package stopwatch;
  * TaskTimer is a kind of stopwatch that count amount of time of each task that
  * is running.
  * 
- * @author totsapon menkul
+ * @author Totsapon menkul
  *
  */
 public class TaskTimer {

@@ -3,14 +3,16 @@ package stopwatch;
 /**
  * to add sum of double in an array.
  * 
- * @author totsapon menkul
+ * @author Totsapon menkul
  *
  */
 public class SumDoublePrimitive implements Runnable {
 	// initialize a counter.
 	private int counter;
-	// initialize an array size
+	// initialize an array size.
 	private int ARRAY_SIZE = 500000;
+	// initialize an array values.
+	double[] values = new double[ARRAY_SIZE];
 
 	/**
 	 * a constructor to get number of counter form TaskTimer.
@@ -29,7 +31,6 @@ public class SumDoublePrimitive implements Runnable {
 	@Override
 	public void run() {
 		// create array of values to add before we start the timer
-		double[] values = new double[ARRAY_SIZE];
 		for (int k = 0; k < ARRAY_SIZE; k++)
 			values[k] = k + 1;
 
@@ -40,8 +41,6 @@ public class SumDoublePrimitive implements Runnable {
 				i = 0; // reuse the array when get to last value
 			sum = sum + values[i];
 		}
-		System.out.println("sum = " + sum);
-
 	}
 
 	/**

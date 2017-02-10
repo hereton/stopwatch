@@ -5,14 +5,16 @@ import java.math.BigDecimal;
 /**
  * to add sum of Big decimal in an array.
  * 
- * @author totsapon menkul
+ * @author Totsapon menkul
  *
  */
 public class SumBigDecimal implements Runnable {
 	// initialize a counter.
 	private int counter;
-	// initialize an array size
+	// initialize an array size.
 	private int ARRAY_SIZE = 50000;
+	// initialize an array values.
+	BigDecimal[] values = new BigDecimal[ARRAY_SIZE];
 
 	/**
 	 * a constructor to get number of counter form TaskTimer.
@@ -31,7 +33,6 @@ public class SumBigDecimal implements Runnable {
 	@Override
 	public void run() {
 		// create array of values to add, before we start the timer
-		BigDecimal[] values = new BigDecimal[ARRAY_SIZE];
 		for (int i = 0; i < ARRAY_SIZE; i++)
 			values[i] = new BigDecimal(i + 1);
 
@@ -41,7 +42,6 @@ public class SumBigDecimal implements Runnable {
 				i = 0;
 			sum = sum.add(values[i]);
 		}
-		System.out.println("sum = " + sum);
 	}
 
 	/**
